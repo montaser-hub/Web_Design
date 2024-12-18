@@ -1,0 +1,155 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* CRUD Container */
+.crud {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background: var(--container-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+.head {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.head h1 {
+  margin-bottom: 10px;
+}
+
+.head p {
+  color: #777;
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  background: var(--input-bg);
+  color: var(--input-text);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--focus-border);
+}
+
+/* Price Fields Group */
+.price input {
+  width: calc(25% - 15px);
+  display: inline-block;
+  margin-right: 15px;
+}
+
+/* Total Display */
+#total {
+  background: #a00d02;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+  transform: scale(1.05);
+}
+
+/* Search Buttons */
+.btnSearch button {
+  width: 48%;
+  margin: 5px 1%;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid var(--table-border);
+  text-align: center;
+}
+
+table th {
+  background: var(--table-header);
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Theme Variables */
+:root {
+  --bg-color: #f4f4f4;
+  --text-color: #333;
+  --container-bg: white;
+  --input-bg: white;
+  --input-text: black;
+  --input-border: #ccc;
+  --focus-border: #4caf50;
+  --button-hover: #45a049;
+  --table-border: #ddd;
+  --table-header: #4caf50;
+}
+
+/* Dark Mode Variables */
+body.dark-mode {
+  --bg-color: #222;
+  --text-color: white;
+  --container-bg: #333;
+  --input-bg: #444;
+  --input-text: white;
+  --input-border: #666;
+  --focus-border: #888;
+  --button-hover: #555;
+  --table-border: #555;
+  --table-header: #555;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .crud {
+    padding: 10px;
+    margin: 20px;
+  }
+
+  input,
+  button {
+    padding: 10px;
+  }
+}
