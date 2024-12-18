@@ -9,7 +9,7 @@ A simple product management system built using HTML, CSS, and JavaScript. This s
 - Toggle between light and dark themes.
   
 ## Project View  
-🔗 [Live Demo](https://montaser-hub.github.io/Web_Design/Product_Management_System/)
+🔗 [Live Demo](https://montaser-hub.github.io/Web_Design/Product_Management_System/crud.html.)
 
 
 ## Installation
