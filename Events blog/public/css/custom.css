@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+header {
+  background-color: #343a40;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+header nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card-body {
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+button.btn-primary,
+button.btn-danger {
+  margin-right: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+button.btn-danger:hover {
+  background-color: #c82333;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Navbar enhancements */
+.navbar {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link {
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #ffc107;
+}
+
+.navbar-nav.ml-auto {
+  margin-left: auto;
+}
+
+.navbar-nav.mr-auto {
+  margin-right: auto;
+}
+
+/* Profile picture in navbar */
+.profile-pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 10px;
+}
+
+/* Flash Messages */
+.alert {
+  display: none;
+  margin: 20px 0;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Show alerts with content */
+.alert-success:not(:empty),
+.alert-danger:not(:empty) {
+  display: block;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
