@@ -8,6 +8,7 @@ const xss = require('xss-clean');
 const hpp = require('hpp');
 // eslint-disable-next-line import/no-extraneous-dependencies
 const cookieParser = require('cookie-parser');
+const compression = require('compression');
 
 const AppError = require('./utils/appError');
 const globalErrorHandler = require('./controllers/errorController');
@@ -66,6 +67,8 @@ app.use(
     ] // allow listed fields in query string
   })
 );
+//compress text content responses
+app.use(compression());
 
 app.use((req, res, next) => {
   console.log('Hello from the MIDDLEWARE :eight_spoked_asterisk:');
