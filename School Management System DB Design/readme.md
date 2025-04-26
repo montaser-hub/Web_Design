@@ -1,6 +1,6 @@
 # 🎓 School Management System
 
-A complete backend database schema design for a scalable School Management System.
+A complete database schema design for a scalable School Management System.
 It covers user management, academic structure, scheduling, exams, quizzes, leaves, announcements, swap requests, reporting, and logging.
 
 ## 🔹 Main Entities & Tables
