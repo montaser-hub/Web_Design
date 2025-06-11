@@ -21,18 +21,20 @@ export const displayMap = locations => {
       const el = document.createElement('div');
       el.className = 'marker';
 
+      //Add popup
+      const popup = new mapboxgl.Popup({ offset: 30 }).setHTML(
+        `<p> Day ${loc.day}: ${loc.description}</p>`
+      );
+      
       //Add marker
       new mapboxgl.Marker({
         element: el,
         anchor: 'bottom'
       })
         .setLngLat(loc.coordinates)
+        .setPopup(popup)
         .addTo(map);
 
-      //Add popup
-      new mapboxgl.Popup({ offset: 30 })
-        .setHTML(`<p> Day ${loc.day}: ${loc.description}</p>`)
-        .addTo( map );
       
       //Extend map bounds to include the current location
       bounds.extend(loc.coordinates);
