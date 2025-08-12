@@ -1,0 +1,17 @@
+.feature-box {
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.feature-box:hover {
+  transform: scale(1.03);
+}
+
+.pricing-table .card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.pricing-table .card:hover {
+  transform: scale(1.05);
+}
